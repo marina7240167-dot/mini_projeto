@@ -1,7 +1,0 @@
-{% extends "base.html" %}
-{% block title %}Sobre a marca | linha norte{% endblock %}
-{% block content %}
-<section class="page-intro"><div class="container py-5"><p class="eyebrow">desde 2024</p><h1>Menos excesso.<br>Mais caminho.</h1></div></section>
-<section class="container py-5"><div class="row g-5 align-items-start"><div class="col-lg-7"><p class="eyebrow">nossa ideia</p><h2>Roupa boa e simples para acompanhar a vida acontecendo.</h2><p class="large-copy">A linha norte nasceu para juntar conforto, design e responsabilidade em pecas que voce realmente quer usar. Criamos colecoes pequenas, com cores que conversam entre si e formas que continuam fazendo sentido depois da tendencia.</p></div><div class="col-lg-4 offset-lg-1"><div class="manifesto">"O melhor look e aquele que deixa voce livre para ir."</div></div></div></section>
-<section class="values-section"><div class="container py-5"><div class="row g-4">{% for value in values %}<div class="col-md-4"><div class="value-item"><span>0{{ loop.index }}</span><h2>{{ value.title }}</h2><p>{{ value.text }}</p></div></div>{% endfor %}</div></div></section>
-{% endblock %}

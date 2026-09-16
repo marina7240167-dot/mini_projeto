@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero py-5 text-center"><div class="container py-5"><p class="text-uppercase small">Moda para todos os dias</p><h1 class="display-3 fw-bold">Vista o seu momento.</h1><p class="lead">Peças versáteis, confortáveis e cheias de estilo.</p><a class="btn btn-dark btn-lg" href="{{ url_for('catalogo') }}">Ver catálogo</a></div></section>
+<section class="container py-5"><h2 class="text-center mb-4">Destaques</h2>{% include "partials/produtos.html" %}</section>
+{% endblock %}

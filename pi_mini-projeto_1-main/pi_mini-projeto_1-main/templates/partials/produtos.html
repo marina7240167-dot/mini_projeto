@@ -1,0 +1,11 @@
+{% if produtos %}
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+  {% for produto in produtos %}
+  <div class="col"><article class="card h-100 product-card"><div class="product-icon">{{ produto.icone }}</div><div class="card-body"><p class="text-uppercase small mb-1">{{ produto.categoria }}</p><h3 class="h5">{{ produto.nome }}</h3><p>Cor: {{ produto.cor }}</p>
+    {% if em_oferta(produto) %}<del class="text-muted">{{ produto.preco_anterior|moeda }}</del>{% endif %}
+    <p class="fs-4 fw-bold mb-2">{{ produto.preco|moeda }}</p>
+    {% if produto.disponivel %}<span class="badge text-bg-success">Disponível</span>{% else %}<span class="badge text-bg-secondary">Indisponível</span>{% endif %}
+  </div></article></div>
+  {% endfor %}
+</div>
+{% else %}<p>Nenhum produto encontrado.</p>{% endif %}

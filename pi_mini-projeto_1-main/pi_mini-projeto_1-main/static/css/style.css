@@ -1,0 +1,8 @@
+body { background: #fffaf8; color: #352b2b; }
+.navbar-brand { color: #a43f54 !important; font-size: 1.5rem; }
+.hero { background: #f4dce1; }
+.hero h1 { color: #7a2639; }
+.product-card { border: 0; box-shadow: 0 3px 12px #00000012; }
+.product-icon { background: #f8e9dc; font-size: 5rem; padding: 2rem; text-align: center; }
+.about-box { background: #e6d6cf; }
+footer { background: #352b2b; color: white; }
